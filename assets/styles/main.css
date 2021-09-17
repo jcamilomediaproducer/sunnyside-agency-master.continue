@@ -1,0 +1,183 @@
+/* Variables */
+:root {
+  /* Primarios */
+  --soft-blue: hsl(200, 100%, 62%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* Neutrales */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typo */
+  --title: "Fraunces", serif;
+  --text: "Barlow", sans-serif;
+}
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: system-ui;
+  font-weight: normal;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  /* max-width: 1440px; */
+}
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+/* Home */
+.home {
+  background: url("../images/desktop/image-header.jpg") var(--soft-blue) center;
+  background-size: cover;
+}
+.home header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.logo img {
+  vertical-align: middle;
+}
+.home menu a {
+  padding: 0.8rem 1.4rem;
+  color: var(--white);
+}
+.home menu a:last-child {
+  font-family: var(--title);
+  background: white;
+  color: black;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.home-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 16rem;
+}
+.home-content h2 {
+  font-family: var(--title);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 8px;
+  margin-bottom: 4rem;
+}
+/* Posts-100 */
+.post-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-item > div {
+  padding: 8rem;
+}
+.post-item div,
+.post-item picture {
+  flex-basis: 50%;
+  width: 50%;
+}
+.post-item .post-img img {
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  object-fit: cover;
+}
+.post-title {
+  font-family: var(--title);
+  font-size: 2.5em;
+}
+.post-text {
+  margin: 1.6rem 0;
+  line-height: 1.8rem;
+}
+.post-link {
+  font-family: var(--title);
+  text-transform: uppercase;
+  position: relative;
+}
+.post-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 7px;
+  background: var(--yellow);
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.5;
+}
+.post-link:hover::before {
+  opacity: 1;
+}
+.post-item:nth-child(2) .post-link::before {
+  background: var(--soft-red);
+}
+/* Posts-50 */
+.posts-50 .row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.posts-50 .row article {
+  flex-basis: 50%;
+  text-align: center;
+}
+.posts-50 article {
+  background-size: cover;
+  background-position: center top;
+  padding: 26rem 3rem 3rem 3rem;
+}
+.posts-50 article:first-child {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  color: var(--dark-desaturated-cyan);
+}
+.posts-50 article:last-child {
+  background-image: url("../images/desktop/image-photography.jpg");
+  color: var(--dark-blue);
+}
+.posts-50 article h3 {
+  font-family: var(--title);
+  font-size: 1.6em;
+  margin-bottom: 2rem;
+}
+.posts-50 article p{
+  line-height: 1.8rem;
+}
+
+.client_title{
+
+  display: flex;
+  justify-content: center;
+padding: 6em;
+  text-transform: capitalize;
+
+  font-family: var(--title);
+  font-size: 1em;
+  color: var(--grayish-blue);
+  letter-spacing: 5px;
+  
+}
