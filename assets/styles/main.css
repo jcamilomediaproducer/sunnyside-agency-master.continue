@@ -368,11 +368,73 @@ width: 100%;
     
   
 
+  .footer{
+    background-color: hsl(168, 34%, 61%);
+    color: hsl(167, 40%, 24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    row-gap: 3rem;
+}
 
+.footer > .menu-items{
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    column-gap: 45px;
+}
 
+.menu-items > a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    transition: 0.3s;
+}
 
-  
+.menu-items > a:hover{
+    color: #fff;
+}
 
+.footer > .social-icons{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.footer > .social-icons > img, .svg-icon{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.footer > .social-icons > img:hover, .svg-icon:hover{
+    filter: brightness(0) invert(1);
+}
+
+.svg-icon:hover{
+    transform: scale(1.25);
+}
+
+.attribution {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(167, 40%, 24%);
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
+.attribution a:hover{
+    color: #fff;
+}
+
+.footer > .logo > a > span{
+    display: none;
+}
 
 
 
